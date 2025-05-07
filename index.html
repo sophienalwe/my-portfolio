@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sophie Nalweyiso's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="Headshot PC.JPG" alt="Sophie Nalweyiso" class="profile-pic" />
+      <div class="intro-text">
+        <h1>Hi, I'm Sophie Nalweyiso</h1>
+        <p>
+          I am a junior computer science student with a concentration in software engineering at the University of Texas at San Antonio.
+          I'm passionate about software development, machine learning, AI, and making tech more accessible.
+        </p>
+        <p>
+          I enjoy building things that help others, creating tutorials, mentoring future coders, and working with amazing teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring software engineer who loves writing clean, impactful code. With experience in Python, Java, HTML, CSS, and MySQL,
+      I bring a collaborative and problem-solving mindset to everything I do.
+    </p>
+    <p>
+      I am passionate about technology, story telling and creating experiences that matter. Outside of tech, I love travelling, discovering new places to eat, and soaking in quiet moments through music, journaling and faith.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon — new projects loading! 🚀</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>MySQL Workbench</li>
+      <li>HTML & CSS</li>
+      <li>Technical Writing</li>
+      <li>Public Speaking</li>
+      <li>Teamwork & Communication</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sophienalwe4@gmail.com">sophienalwe4@gmail.com</a></p>
+    <p>Phone: 857-832-8754</p>
+    <p><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sophie Nalweyiso. All rights reserved. <span class="bow">🎀</span></p>
+  </footer>
+  <script>
+    // IntersectionObserver scroll reveal
+    const sections = document.querySelectorAll('section');
+    const introItems = document.querySelectorAll('.intro-text h1, .intro-text p');
+  
+    const options = {
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  
+    //Animated intro
+    window.addEventListener('load', () => {
+      introItems.forEach((el, i) => {
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, i * 200);
+      });
+    });
+  </script>
+  
+</body>
+</html>
