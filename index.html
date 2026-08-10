@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sophie Nalweyiso's Portfolio</title>
+  <title>Sophie Nalweyiso | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <!-- Header Section -->
+
+  <!-- Header -->
   <header>
-    <nav>
+    <nav class="navbar">
+      <a href="#hero" class="logo">SN.</a>
+
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -19,149 +23,290 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <img src="Headshot PC.JPG" alt="Sophie Nalweyiso" class="profile-pic" />
+
+      <img
+        src="Headshot PC.JPG"
+        alt="Sophie Nalweyiso"
+        class="profile-pic"
+      />
+
       <div class="intro-text">
-        <h1>Hi, I'm Sophie 👋🏾</h1>
-        <p>
-          I am a software engineer focused on building clean, responsive and user-friendly web experiences. 
+        <p class="eyebrow">Software Engineer · Frontend & Full Stack</p>
+
+        <h1>Hi, I'm Sophie </h1>
+
+        <p class="hero-description">
+          I build clean, responsive, and user-friendly web experiences
+          with a strong interest in thoughtful UI and design.
         </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Work</a>
+
+          <a
+            href="https://github.com/sophienalwe"
+            target="_blank"
+            class="btn secondary"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="content-section">
+    <p class="section-label">A little about me</p>
+    <h2>About Me</h2>
+
+    <div class="about-text">
+      <p>
+        I recently graduated with a degree in Computer Science from the
+        University of Texas at San Antonio, where I focused on software
+        engineering and gained hands-on experience building full-stack
+        applications.
+      </p>
+
+      <p>
+        I especially enjoy frontend development and turning ideas into
+        interfaces that feel simple, intuitive, and enjoyable to use.
+      </p>
+
+      <p>
+        Outside of tech, I enjoy traveling, discovering new places to eat,
+        music, and spending time with the people I love.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="content-section">
+    <p class="section-label">Things I've built</p>
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-number">01</div>
+
+        <h3>Productivity Pal</h3>
+
         <p>
-          I enjoy working across frontend and full-stack development, with a strong interest in thoughtful UI and design.
+          An AI-powered productivity planner that helps users decide what to
+          work on based on their energy level and priorities.
         </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>OpenAI</span>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://productivity-pal-frontend.onrender.com"
+            target="_blank"
+          >
+            Live App ↗
+          </a>
+
+          <a
+            href="https://github.com/sophienalwe/productivity-pal"
+            target="_blank"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </article>
+
+
+      <article class="project-card featured">
+        <div class="project-number">02</div>
+
+        <h3>Red Flag Radar</h3>
+
+        <p>
+          A full-stack relationship insight tool that analyzes user-submitted
+          messages and tone to return playful, real-time verdicts.
+        </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Express</span>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://red-flag-radar.onrender.com"
+            target="_blank"
+          >
+            Live App ↗
+          </a>
+
+          <a
+            href="https://github.com/sophienalwe/red-flag-radar"
+            target="_blank"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </article>
+
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+
+        <h3>NoteGenie</h3>
+
+        <p>
+          An AI-powered study tool that transforms lectures and articles into
+          concise notes, study questions, and key definitions.
+        </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>OpenAI</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://notegenie.onrender.com" target="_blank">
+            Live App ↗
+          </a>
+
+          <a
+            href="https://github.com/sophienalwe/notegenie"
+            target="_blank"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </article>
+
+
+      <article class="project-card">
+        <div class="project-number">04</div>
+
+        <h3>Verse of the Day</h3>
+
+        <p>
+          A simple scripture-based app that shares encouraging Bible verses
+          based on themes such as peace, strength, and purpose.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://sophienalwe.github.io/verse-of-the-day/"
+            target="_blank"
+          >
+            Live App ↗
+          </a>
+
+          <a
+            href="https://github.com/sophienalwe/verse-of-the-day"
+            target="_blank"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="content-section">
+    <p class="section-label">What I work with</p>
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>JavaScript · TypeScript · Python · Java · HTML/CSS</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <p>React · Tailwind CSS · AG Grid</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <p>Node.js · Express · FastAPI · PostgreSQL</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p>Git · Docker · VS Code · Postman · Jira · AWS</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-box">
+      <p class="section-label">Say hello</p>
+      <h2>Let's Connect</h2>
+
+      <p>
+        I'm always happy to connect about software engineering,
+        frontend development, or interesting projects.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:sophienalwe4@gmail.com" class="btn primary">
+          Email Me
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/sophie-nalweyiso-071b791ab/"
+          target="_blank"
+          class="btn secondary"
+        >
+          LinkedIn
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I recently graduated with a degree in Computer Science from the University of Texas at San Antonio, 
-      where I focused on software engineering and gained hands-on experience building full-stack applications.
-    </p>
-    <p>
-      Outside of tech, I enjoy traveling, discovering new places to eat, music and spending time with people I love.
-    </p>
-  </section>
-
-  <!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Productivity Pal</h3>
-    <p>
-      Your AI time + task buddy. For the days when you know you have things to do… but don’t know where to start.  
-      A gentle productivity planner that prioritizes your to-dos based on energy, not pressure — powered by OpenAI.  
-      Built with React, Node.js, Express, and the OpenAI API.
-    </p>
-    <a href="https://productivity-pal-frontend.onrender.com" target="_blank">View Live App</a>
-    <a href="https://github.com/sophienalwe/productivity-pal" target="_blank">View Code</a>
-  </div>  
-
-  <div class="project-card">
-    <h3>Red Flag Radar</h3>
-    <p>
-      A full-stack relationship checker that detects red flags based on user-submitted text and tone.
-      Built with React and Express, it returns real-time verdicts to help users navigate conversations wisely.
-    </p>
-    <a href="https://red-flag-radar.onrender.com" target="_blank">View Live App</a>
-    <a href="https://github.com/sophienalwe/red-flag-radar" target="_blank">View Code</a>
-  </div>
-
-  <div class="project-card">
-    <h3>NoteGenie</h3>
-    <p>
-      An AI-powered note converter that transforms lectures or articles into concise bullet points, study questions, and key term definitions.  
-      Built with React and OpenAI, NoteGenie helps students study smarter, not harder.
-    </p>
-    <a href="https://notegenie.onrender.com" target="_blank">View Live App</a>
-    <a href="https://github.com/sophienalwe/notegenie" target="_blank">View Code</a>
-  </div>
-
-  <div class="project-card">
-    <h3>Verse of the Day</h3>
-    <p>
-      A scripture-based app that delivers encouraging Bible verses based on themes like peace, strength, and purpose.
-    </p>
-    <a href="https://sophienalwe.github.io/verse-of-the-day/" target="_blank">View Live App</a>
-    <a href="https://github.com/sophienalwe/verse-of-the-day" target="_blank">View Code</a>
-  </div>
-</section>
-
-
-  <!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-container">
-    <div class="skill-group">
-      <h3>Languages</h3>
-      <p>JavaScript, TypeScript, Python, Java, HTML/CSS</p>
-    </div>
-
-    <div class="skill-group">
-      <h3>Frontend</h3>
-      <p>React, Tailwind CSS, AG Grid</p>
-    </div>
-
-    <div class="skill-group">
-      <h3>Backend</h3>
-      <p>Node.js, Express, FastAPI, PostgreSQL</p>
-    </div>
-
-    <div class="skill-group">
-      <h3>Tools & Technologies</h3>
-      <p>Git, Docker, VS code, PostMan, Jira, AWS </p>
-    </div>
-  </div>
-</section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:sophienalwe4@gmail.com">sophienalwe4@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/sophie-nalweyiso-071b791ab/" target="_blank">LinkedIn</a></p>
-  </section>
-
   <footer>
-    <p>&copy; 2026 Sophie Nalweyiso. All rights reserved. <span class="bow">🎀</span></p>
+    <p>
+      © 2026 Sophie Nalweyiso
+      <span class="bow">🎀</span>
+    </p>
   </footer>
+
   <script>
-    // IntersectionObserver scroll reveal
-    const sections = document.querySelectorAll('section');
-    const introItems = document.querySelectorAll('.intro-text h1, .intro-text p');
-  
-    const options = {
-      threshold: 0.1
-    };
-  
-    const observer = new IntersectionObserver((entries, observer) => {
+    const sections = document.querySelectorAll('.content-section');
+
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
           entry.target.classList.add('reveal');
           observer.unobserve(entry.target);
         }
       });
-    }, options);
-  
-    sections.forEach(section => {
-      observer.observe(section);
+    }, {
+      threshold: 0.1
     });
-  
-    //Animated intro
-    window.addEventListener('load', () => {
-      introItems.forEach((el, i) => {
-        setTimeout(() => {
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        }, i * 200);
-      });
-    });
+
+    sections.forEach(section => observer.observe(section));
   </script>
-  
+
 </body>
 </html>
